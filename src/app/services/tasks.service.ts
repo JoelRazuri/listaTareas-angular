@@ -10,7 +10,7 @@ export class TasksService {
   constructor() { }
 
 
-  getTasks() {
+  getTasks(): string[] {
     return JSON.parse(localStorage.getItem(this.localStorageKey) as string) || [];
   }
 
